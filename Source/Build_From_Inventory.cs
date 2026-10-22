@@ -19,7 +19,7 @@ namespace Build_From_Inventory
 #endif
 
 			Harmony harmony = new Harmony("Uuugggg.rimworld.Build_From_Inventory.main");
-			harmony.PatchAll();
+			harmony.PatchAll(Assembly.GetExecutingAssembly());
 		}
 
 //		public override void DoSettingsWindowContents(Rect inRect)
